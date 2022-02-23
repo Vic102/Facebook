@@ -4,8 +4,8 @@
 }
 
 body, button, input, label, select, td, textarea {
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 12px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, '.SFNSText-Regular', sans-serif;
+  font-size: 12px;
 }
 
 .line {
@@ -41,19 +41,21 @@ main {
   flex-flow: column;
   align-items:flex-start;
   font-size: 25px;
-  width: 58%;
-  padding-left: 170px;
+  width: 580;
   padding-top: 40px;
-  padding-right: 50px;
+  padding-right: 70px;
   font-size: 28px;
+  margin: 0 auto;
+
 }
-.intro img {
+.intro svg {
   width: 300px;
   margin-left: -28px;
 }
 
 .intro p {
   margin-top: -8px;
+  width: 500px;
 }
 
 
@@ -119,6 +121,7 @@ input::placeholder {
   font-weight: 500;
   text-align: center;
   padding-top:10px;
+  font-weight: 500;
 }
 .forgottenPassword a {
   color: #217ef3;
@@ -145,8 +148,9 @@ input::placeholder {
 }
 
 .famousPage {
-  font-size: 14px;
+  font-size: 12px;
   padding-top: 15px;
+  text-align: center;
 }
 
 .enterOldAccount:hover {
@@ -165,7 +169,8 @@ footer {
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
-  padding: 0 270px;
+  padding: 0 350px;
+  font-size: 12px;
 }
 
 ul {
@@ -215,6 +220,48 @@ ul li {
 .meta {
   font-size: 11px;
   margin-top: 20px;
-    margin-bottom: 20px;
-    color: #737373;
+  margin-bottom: 20px;
+  color: #737373;
+}
+
+
+@media only screen and (max-width: 1046px) {
+  .mainPage {
+    flex-direction: column;
+  }
+
+  .intro {
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    padding-right: 5px;
+  }
+
+  .intro svg {
+    margin: auto;
+  }
+
+  main {
+    height: auto;
+    margin: auto;
+    padding: 0;
+  }
+
+  .rightSide {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .famousPage {
+    padding-bottom: 50px;
+  }
+
+  footer {
+    margin: 50px;
+    padding: 0;
+  }
+
+
 }
